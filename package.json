@@ -16,10 +16,24 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "styled-components": "^4.3.2"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "babel-eslint": "10.0.1",
+    "babel-plugin-styled-components": "^1.10.6",
+    "babel-preset-gatsby": "^0.1.11",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^15.0.2",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": "2.16.0",
+    "eslint-plugin-jsx-a11y": "^5.0.1",
+    "eslint-plugin-react": "7.12.4",
+    "prettier": "^1.19.1",
+    "stylelint": "^10.1.0",
+    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.8.0"
   },
   "keywords": [
     "gatsby"
@@ -31,6 +45,7 @@
     "develop": "gatsby develop",
     "develop:remote": "gatsby develop -H 0.0.0.0",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "lint": "eslint --ext .js --ext .jsx && stylelint './src/**/*.jsx' './src/**/*.js'",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
