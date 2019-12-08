@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
-import { navLinkHover, FONT_24 } from 'helper/constants/styles';
+import { navLinkHover, FONT_36 } from 'helper/constants/styles';
 
 
 const MenuClick = styled.div`
@@ -80,26 +80,33 @@ const MenuClick = styled.div`
 `;
 
 const MenuList = styled.ul`
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  width: 22rem;
+  width: max-content;
   height: 100vh;
-  margin: -80px 0 0 -16rem;
-  padding: 60px;
-  padding-top: 90px;
+  margin: -82px 0 0 -30rem;
+  padding: 0rem 30rem 0rem 4rem;
+  padding-top: 110px;
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
-  transform: translate(100%, 0);
+  transform: translate(160%,0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
   > a {
-    font-size: ${FONT_24};
+    font-size: ${FONT_36};
+    text-decoration: none;
+    transition: all .4s ease;
+    margin-bottom: 1.15rem;
   }
 
-  > li {
-    padding: 10px 0;
-    font-size: 22px;
+  > a:hover {
+    color: #588157;
+    transform: translate3d(-.2em,0,0);
+    background: linear-gradient(#000,#000) 0 100%/100% 1px no-repeat;
   }
 `;
 
