@@ -22,3 +22,4 @@ export const FONT_20 = '1.25em';
 export const FONT_24 = '1.5em';
 export const FONT_28 = '1.75em';
 export const FONT_36 = '2.25em';
+export const FONT_40 = '2.5em';

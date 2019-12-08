@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
-import { navLinkHover, FONT_36 } from 'helper/constants/styles';
+import { navLinkHover, FONT_40 } from 'helper/constants/styles';
 
 
 const MenuClick = styled.div`
@@ -62,7 +62,7 @@ const MenuClick = styled.div`
   > input:checked ~ span {
     opacity: 0.9;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
+    background: #fafae5;
   }
 
   > input:checked ~ span:nth-last-child(3) {
@@ -88,25 +88,26 @@ const MenuList = styled.ul`
   margin: -82px 0 0 -30rem;
   padding: 0rem 30rem 0rem 4rem;
   padding-top: 110px;
-  background: #ededed;
+  background: #14171c;
+  opacity: 0.96;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
   transform: translate(160%,0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: -2px 1px 5px 4px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
   > a {
-    font-size: ${FONT_36};
+    font-size: ${FONT_40};
     text-decoration: none;
     transition: all .4s ease;
+    color: #fafae5;
     margin-bottom: 1.15rem;
   }
 
   > a:hover {
-    color: #588157;
     transform: translate3d(-.2em,0,0);
-    background: linear-gradient(#000,#000) 0 100%/100% 1px no-repeat;
+    background: linear-gradient(#fafae5,#fafae5) 0 100%/100% 1px no-repeat;
   }
 `;
 
