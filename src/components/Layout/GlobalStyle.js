@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import '../../helper/fonts.css';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -24,6 +25,7 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     flex-direction: column;
     flex-grow: 1;
+    font-weight: 400;
   }
 
   html {
@@ -33,6 +35,10 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     word-break: break-word;
   }
+  
+  body {
+    font-family: "IBM Plex Serif Condensed", sans-serif, BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  }
 
   h1,
   h2,
@@ -41,6 +47,7 @@ const GlobalStyle = createGlobalStyle`
   h5,
   h6 {
     color: inherit;
+    font-family: "IBM Plex Serif", serif;
     font-weight: 400;
     line-height: 1.1;
     margin-top: 0;
@@ -71,6 +78,15 @@ const GlobalStyle = createGlobalStyle`
 
   h6 {
     font-size: 0.78405em;
+  }
+
+  a {
+    color: #00020f;
+    font-size: 1.125em;
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
 `;
 

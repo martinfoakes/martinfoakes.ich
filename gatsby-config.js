@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   siteMetadata: {
     title: 'Martin Foakes Portfolio',
@@ -15,6 +17,16 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-plugin-root-import',
+      options: {
+        src: path.join(__dirname, 'src'),
+        components: path.join(__dirname, 'src/components'),
+        helper: path.join(__dirname, 'src/helper'),
+        images: path.join(__dirname, 'src/images'),
+        pages: path.join(__dirname, 'src/pages'),
+      },
+    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
