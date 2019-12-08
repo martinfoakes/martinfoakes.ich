@@ -97,17 +97,17 @@ const MenuList = styled.ul`
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   box-shadow: -2px 1px 5px 4px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
+  > a:hover {
+    transform: translate3d(-.2em,0,0);
+    background: linear-gradient(#fafae5,#fafae5) 0 100%/100% 1px no-repeat;
+  }
+
   > a {
     font-size: ${FONT_40};
     text-decoration: none;
     transition: all .4s ease;
     color: #fafae5;
     margin-bottom: 1.15rem;
-  }
-
-  > a:hover {
-    transform: translate3d(-.2em,0,0);
-    background: linear-gradient(#fafae5,#fafae5) 0 100%/100% 1px no-repeat;
   }
 `;
 
