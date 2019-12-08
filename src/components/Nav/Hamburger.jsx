@@ -13,12 +13,6 @@ const MenuClick = styled.div`
   z-index: 1;
   user-select: none;
 
-  &:hover {
-    > span {
-      background: #757575;
-    }
-  }
-
   > a {
     text-decoration: none;
     color: #232323;
@@ -82,6 +76,12 @@ const MenuClick = styled.div`
 
   > input:checked ~ ul {
     transform: none;
+  }
+
+  &:hover {
+    > span {
+      background: #757575;
+    }
   }
 `;
 
