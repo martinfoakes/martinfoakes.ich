@@ -8,8 +8,8 @@ import { navLinkHover, FONT_40 } from 'helper/constants/styles';
 const MenuClick = styled.div`
   display: block;
   position: relative;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   z-index: 1;
   user-select: none;
 
@@ -45,10 +45,10 @@ const MenuClick = styled.div`
     background: #757575;
     border-radius: 2px;
     z-index: 1;
-    transform-origin: 4px 0px;
+    transform-origin: 4px 0;
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
+      background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+      opacity 0.55s ease;
   }
 
   > span:first-child {
@@ -86,7 +86,7 @@ const MenuList = styled.ul`
   width: max-content;
   height: 100vh;
   margin: -82px 0 0 -30rem;
-  padding: 0rem 30rem 0rem 4rem;
+  padding: 0 30rem 0 4rem;
   padding-top: 110px;
   background: #14171c;
   opacity: 0.96;
