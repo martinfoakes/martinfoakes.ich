@@ -2,7 +2,9 @@ import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 
+import { Container } from 'components/Layout/Grid';
 import Hamburger from 'components/Nav/Hamburger';
+
 import { navHeight } from 'helper/constants/styles';
 
 const NavContainer = styled.div`
@@ -14,17 +16,8 @@ const NavContainer = styled.div`
   right: 0;
 `;
 
-const NavMenu = styled.nav`
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 18px;
-  padding-right: 18px;
-  max-width: 100rem;
-  width: 100%;
-  align-items: center;
+const NavMenu = styled(Container)`
+  display: flex;  align-items: center;
   height: 100%;
   justify-content: space-between;
 `;
@@ -42,7 +35,7 @@ const NavHome = styled(Link)`
 
 const Nav = () => (
   <NavContainer>
-    <NavMenu>
+    <NavMenu as="nav">
       <NavHome to="/">
         <h1>{'{MF}'}</h1>
       </NavHome>

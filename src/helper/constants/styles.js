@@ -9,6 +9,8 @@ export const navHeight = '8rem';
  * COLOUR VALUES
  */
 export const navLinkHover = '#ababab';
+export const FOREST_GREEN_DARK = '#1B5E20';
+export const FOREST_BROWN = '#814123';
 
 /**
  * TYPOGRAPHY SIZES
@@ -23,3 +25,4 @@ export const FONT_24 = '1.5em';
 export const FONT_28 = '1.75em';
 export const FONT_36 = '2.25em';
 export const FONT_40 = '2.5em';
+export const FONT_56 = '3.5em';

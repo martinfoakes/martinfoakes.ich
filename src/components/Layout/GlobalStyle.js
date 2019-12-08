@@ -41,13 +41,6 @@ const GlobalStyle = createGlobalStyle`
   
   body {
     font-family: "IBM Plex Sans Condensed", sans-serif, BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 18px;
-    padding-right: 18px;
-    max-width: 100rem;
-    width: 100%;
   }
 
   h1,
@@ -57,7 +50,6 @@ const GlobalStyle = createGlobalStyle`
   h5,
   h6 {
     font-family: "IBM Plex Serif", serif;
-    font-weight: 400;
     line-height: 1.1;
     margin-top: 0;
     margin-bottom: 1.45rem;
@@ -66,7 +58,6 @@ const GlobalStyle = createGlobalStyle`
 
   h1 {
     font-size: 2em;
-    font-weight: 700;
   }
 
   h2 {
@@ -92,6 +83,7 @@ const GlobalStyle = createGlobalStyle`
   a {
     color: #0d0900;
     font-size: ${FONT_18};
+    text-decoration: none;
   }
 `;
 
