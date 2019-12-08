@@ -13,6 +13,12 @@ const MenuClick = styled.div`
   z-index: 1;
   user-select: none;
 
+  &:hover {
+    > span {
+      background: #757575;
+    }
+  }
+
   > a {
     text-decoration: none;
     color: #232323;
@@ -38,11 +44,11 @@ const MenuClick = styled.div`
 
   > span {
     display: block;
-    width: 40px;
-    height: 6px;
+    width: 28px;
+    height: 2px;
     margin-bottom: 6px;
     position: relative;
-    background: #757575;
+    background: #0D0900;
     border-radius: 2px;
     z-index: 1;
     transform-origin: 4px 0;
