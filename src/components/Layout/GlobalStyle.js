@@ -40,7 +40,7 @@ const GlobalStyle = createGlobalStyle`
   }
   
   body {
-    font-family: "IBM Plex Sans Condensed", sans-serif, BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-family: "IBM Plex Sans Condensed", sans-serif, BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue";
   }
 
   h1,
