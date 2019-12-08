@@ -1,0 +1,31 @@
+@font-face {
+  font-family: PlexSerif;
+  font-display: auto;
+  src: url('./IBMPlexSerif-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: PlexSerif;
+  font-display: auto;
+  src: url('./IBMPlexSerif-SemiBold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: PlexSans;
+  font-display: auto;
+  src: url('./IBMPlexSansCondensed-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: PlexSans;
+  font-display: auto;
+  src: url('./IBMPlexSansCondensed-SemiBold.ttf');
+  font-weight: 700;
+}
+
+body {
+  font-family: "PlexSans",BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
