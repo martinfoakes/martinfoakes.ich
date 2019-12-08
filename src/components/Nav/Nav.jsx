@@ -5,7 +5,10 @@ import styled from 'styled-components';
 import { Container } from 'components/Layout/Grid';
 import Hamburger from 'components/Nav/Hamburger';
 
+import { GithubLink } from 'helper/constants/constants';
 import { navHeight } from 'helper/constants/styles';
+
+import Github from 'images/github.svg';
 
 const NavContainer = styled.div`
   height: ${navHeight};
@@ -33,13 +36,31 @@ const NavHome = styled(Link)`
   }
 `;
 
+const NavRight = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const SocialIcon = styled.img`
+  width: 3.2rem;
+  margin-right: 2rem;
+  transition: all .3s ease;
+
+  &:hover {
+    opacity: 0.4;
+  }
+`;
+
 const Nav = () => (
   <NavContainer>
     <NavMenu as="nav">
       <NavHome to="/">
         <h1>{'{MF}'}</h1>
       </NavHome>
-      <Hamburger />
+      <NavRight>
+        <a href={GithubLink}><SocialIcon src={Github} alt="Github icon" /></a>
+        <Hamburger />
+      </NavRight>
     </NavMenu>
   </NavContainer>
 );

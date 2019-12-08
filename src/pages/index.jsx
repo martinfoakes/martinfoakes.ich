@@ -5,6 +5,7 @@ import Layout from 'components/Layout/Layout';
 import SEO from 'components/seo';
 import { Container } from 'components/Layout/Grid';
 
+import { GithubLink } from 'helper/constants/constants';
 import {
   FONT_56,
   FOREST_BROWN,
@@ -25,7 +26,7 @@ const IndexContainer = styled(Container)`
 `;
 
 const IndexLink = styled.a`
-  width: 30%;
+  width: fit-content;
   color: ${FOREST_GREEN_DARK};
 
   &:hover {
@@ -50,7 +51,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <IndexContainer>
-      <IndexLink href="https://github.com/martinfoakes"><h1>{'Martin Foakes.'}</h1></IndexLink>
+      <IndexLink href={GithubLink}><h1>{'Martin Foakes.'}</h1></IndexLink>
       <h2>
         {'I\'m a web developer, based in '}
         <BerlinStyle>{'Berlin.'}</BerlinStyle>

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Box, Flex } from '@rebass/grid';
 
 const Container = styled(Flex)`
-  max-width: 100rem;
+  max-width: 80rem;
   width: 100%;
 `;
 Container.displayName = 'Container';

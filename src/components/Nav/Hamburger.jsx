@@ -84,7 +84,7 @@ const MenuList = styled.ul`
   flex-direction: column;
   position: absolute;
   width: max-content;
-  height: 100vh;
+  height: 110vh;
   margin: -82px 0 0 -30rem;
   padding: 0 30rem 0 4rem;
   padding-top: 110px;
