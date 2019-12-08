@@ -1,10 +1,12 @@
 import { Link } from 'gatsby';
 import React from 'react';
-
 import styled from 'styled-components';
 
+import Hamburger from 'components/Nav/Hamburger';
+import { navHeight } from 'helper/constants/styles';
+
 const NavContainer = styled.div`
-  height: 70px;
+  height: ${navHeight};
   margin-bottom: 2vh;
   position: fixed;
   top: 0;
@@ -22,13 +24,19 @@ const NavMenu = styled.nav`
   padding-right: 18px;
   max-width: 100rem;
   width: 100%;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
 `;
 
 const NavHome = styled(Link)`
   text-decoration: none;
   cursor: pointer;
+
   > h1 {
     font-size: 3.4em;
+    font-weight: 400;
+    margin: 0;
   }
 `;
 
@@ -38,6 +46,7 @@ const Nav = () => (
       <NavHome to="/">
         <h1>{'{MF}'}</h1>
       </NavHome>
+      <Hamburger />
     </NavMenu>
   </NavContainer>
 );

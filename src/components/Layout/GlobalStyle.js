@@ -1,4 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
+
+import { FONT_BASE, FONT_18 } from 'helper/constants/styles';
 import '../../helper/fonts.css';
 
 const GlobalStyle = createGlobalStyle`
@@ -18,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
 
   html,
   body {
+    color: #0d0900;
     margin: 0;
     padding: 0;
     display: flex;
@@ -31,13 +34,20 @@ const GlobalStyle = createGlobalStyle`
   html {
     background-color: #fbf9f5;
     color: #000;
-    font-size: 100%;
+    font-size: ${FONT_BASE};
     box-sizing: border-box;
     word-break: break-word;
   }
   
   body {
-    font-family: "IBM Plex Serif Condensed", sans-serif, BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-family: "IBM Plex Sans Condensed", sans-serif, BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 18px;
+    padding-right: 18px;
+    max-width: 100rem;
+    width: 100%;
   }
 
   h1,
@@ -46,7 +56,6 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    color: inherit;
     font-family: "IBM Plex Serif", serif;
     font-weight: 400;
     line-height: 1.1;
@@ -81,12 +90,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   a {
-    color: #00020f;
-    font-size: 1.125em;
-  }
-
-  a:hover {
-    text-decoration: underline;
+    color: #0d0900;
+    font-size: ${FONT_18};
   }
 `;
 
