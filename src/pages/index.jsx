@@ -1,12 +1,16 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 import Layout from 'components/Layout/Layout';
 import SEO from 'components/seo';
 import { Container } from 'components/Layout/Grid';
 
-import { FONT_56, FOREST_BROWN, FOREST_GREEN_DARK } from 'helper/constants/styles';
+import {
+  FONT_56,
+  FOREST_BROWN,
+  FOREST_GREEN_DARK,
+  FOREST_GREEN_LIGHT,
+} from 'helper/constants/styles';
 
 const IndexContainer = styled(Container)`
   flex-direction: column;
@@ -16,6 +20,7 @@ const IndexContainer = styled(Container)`
   > h2 {
     font-weight: 400;
     font-size: ${FONT_56};
+    margin-top: 1.8rem;
   }
 `;
 
@@ -25,13 +30,15 @@ const IndexLink = styled.a`
 
   &:hover {
     transform: translateY(-8px);
-    color: #3b923e;
+    color: ${FOREST_GREEN_LIGHT};
     transition: all .3s ease;
+    background: linear-gradient(#3b923e,#3b923e) 0 100%/100% 1px no-repeat;
   }
 
   > h1 {
     font-weight: 400;
     font-size: ${FONT_56};
+    margin: 0;
   }
 `;
 

@@ -10,6 +10,7 @@ export const navHeight = '8rem';
  */
 export const navLinkHover = '#ababab';
 export const FOREST_GREEN_DARK = '#1B5E20';
+export const FOREST_GREEN_LIGHT = '#3b923e';
 export const FOREST_BROWN = '#814123';
 
 /**
