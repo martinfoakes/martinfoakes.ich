@@ -59,6 +59,12 @@ const MenuClick = styled.div`
     transform-origin: 0% 100%;
   }
 
+  &:hover {
+    > span {
+      background: #757575;
+    }
+  }
+
   > input:checked ~ span {
     opacity: 0.9;
     transform: rotate(45deg) translate(-2px, -1px);
@@ -76,12 +82,6 @@ const MenuClick = styled.div`
 
   > input:checked ~ ul {
     transform: none;
-  }
-
-  &:hover {
-    > span {
-      background: #757575;
-    }
   }
 `;
 
