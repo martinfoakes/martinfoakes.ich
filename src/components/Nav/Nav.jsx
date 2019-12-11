@@ -6,9 +6,9 @@ import { Container } from 'components/Layout/Grid';
 import Hamburger from 'components/Nav/Hamburger';
 
 import { GithubLink } from 'helper/constants/constants';
-import { navHeight } from 'helper/constants/styles';
+import { navHeight, FONT_54 } from 'helper/constants/styles';
 
-import Github from 'images/github.svg';
+import GithubIcon from 'images/GithubIcon';
 
 const NavContainer = styled.div`
   height: ${navHeight};
@@ -30,7 +30,7 @@ const NavHome = styled(Link)`
   cursor: pointer;
 
   > h1 {
-    font-size: 3.4em;
+    font-size: ${FONT_54};
     font-weight: 400;
     margin: 0;
   }
@@ -41,8 +41,8 @@ const NavRight = styled.div`
   align-items: center;
 `;
 
-const SocialIcon = styled.img`
-  width: 3.2rem;
+const SocialIcon = styled.a`
+  width: 2.8rem;
   margin-right: 2rem;
   transition: all .3s ease;
 
@@ -58,7 +58,7 @@ const Nav = () => (
         <h1>{'{MF}'}</h1>
       </NavHome>
       <NavRight>
-        <a href={GithubLink}><SocialIcon src={Github} alt="Github icon" /></a>
+        <SocialIcon href={GithubLink}><GithubIcon /></SocialIcon>
         <Hamburger />
       </NavRight>
     </NavMenu>

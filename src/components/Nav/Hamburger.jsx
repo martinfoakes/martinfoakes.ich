@@ -2,26 +2,24 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
-import { navLinkHover, FONT_40 } from 'helper/constants/styles';
+import { GithubLink, LinkedinLink } from 'helper/constants/constants';
+import {
+  navLinkHover,
+  FONT_54,
+  FONT_20,
+} from 'helper/constants/styles';
 
+import GithubIcon from 'images/GithubIcon';
+import LinkedinIcon from 'images/LinkedinIcon';
 
 const MenuClick = styled.div`
   display: block;
+  color: #fafae5;
   position: relative;
   top: 0;
   left: 0;
   z-index: 1;
   user-select: none;
-
-  > a {
-    text-decoration: none;
-    color: #232323;
-    transition: color 0.3s ease;
-  }
-
-  > a:hover {
-    color: ${navLinkHover};
-  }
 
   > input {
     display: block;
@@ -71,64 +69,119 @@ const MenuClick = styled.div`
     background: #fafae5;
   }
 
-  > input:checked ~ span:nth-last-child(3) {
+  > input:checked ~ span[id="2"] {
+    transform: rotate(-45deg) translate(-5px, 0px);
+  }
+
+  > input:checked ~ span[id="3"] {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
   }
 
-  > input:checked ~ span:nth-last-child(2) {
-    transform: rotate(-45deg) translate(0, -1px);
-  }
-
-  > input:checked ~ ul {
+  > input:checked ~ div {
     transform: none;
   }
 `;
 
-const MenuList = styled.ul`
+const MenuList = styled.div`
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
   width: max-content;
-  height: 110vh;
-  margin: -82px 0 0 -30rem;
-  padding: 0 30rem 0 4rem;
-  padding-top: 110px;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
   background: #14171c;
-  opacity: 0.96;
+  opacity: 1;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
   transform: translate(160%,0);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  transition: transform 0.6s cubic-bezier(0.77,0.2,0.05,1.0);
   box-shadow: -2px 1px 5px 4px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 `;
 
-const MenuLink = styled(Link)`
-  font-size: ${FONT_40};
-  text-decoration: none;
-  transition: all .4s ease;
-  color: #fafae5;
-  margin-bottom: 1.15rem;
+const MenuLinks = styled.div`
+  position: absolute;
+  top: 6rem;
+  left: 10rem;
 
-  &:hover {
-    transform: translate3d(-.2em,0,0);
-    background: linear-gradient(#fafae5,#fafae5) 0 100%/100% 1px no-repeat;
+  > ul {
+    list-style: none;
+    padding-inline-start: 0;
   }
+`;
+
+const StyledLink = styled(Link)`
+  font-size: ${FONT_54};
+  text-decoration: none;
+  color: #fafae5;
+
+  > li {
+    margin-bottom: 1.6rem;
+    width: max-content;
+    &:hover {
+      transition: all .4s ease;
+      color: ${navLinkHover};
+      transform: translateX(-0.6rem);
+      background: linear-gradient(#fafae5,#fafae5) 0 100%/100% 1px no-repeat;
+    }
+  }
+`;
+
+const LinksSection = styled.div`
+  position: absolute;
+  bottom: 11rem;
+  right: 6rem;
+
+  > ul {
+    list-style: none;
+    padding-inline-start: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  a {
+    color: #fafae5;
+  }
+`;
+
+const Copyright = styled.div`
+  font-size: ${FONT_20};
+  z-index: 11;
+  position: fixed;
+  right: 6rem;
+  bottom: 6rem;
 `;
 
 const Hamburger = () => (
   <>
     <MenuClick>
       <input type="checkbox" />
-      <span />
-      <span />
-      <span />
+      <span id="1" />
+      <span id="2" />
+      <span id="3" />
       <MenuList id="menu">
-        <MenuLink href="/"><li>{'About'}</li></MenuLink>
-        <MenuLink href="/"><li>{'Work'}</li></MenuLink>
-        <MenuLink href="/"><li>{'Contact'}</li></MenuLink>
+        <MenuLinks>
+          <ul>
+            <StyledLink to="/"><li>{'Home'}</li></StyledLink>
+            <StyledLink to="/"><li>{'My Work'}</li></StyledLink>
+            <StyledLink to="/"><li>{'Contact Me'}</li></StyledLink>
+          </ul>
+        </MenuLinks>
+        <LinksSection>
+          <ul>
+            <a href={GithubLink}><GithubIcon /></a>
+            <a href={LinkedinLink}><LinkedinIcon /></a>
+          </ul>
+        </LinksSection>
       </MenuList>
+      <Copyright>
+        {`Copyright(c) ${new Date().getFullYear()} Martin Foakes. All rights reserved`}
+      </Copyright>
     </MenuClick>
   </>
 );

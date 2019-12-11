@@ -85,6 +85,10 @@ const GlobalStyle = createGlobalStyle`
     font-size: ${FONT_18};
     text-decoration: none;
   }
+
+  svg {
+    fill: currentColor;
+  }
 `;
 
 export default GlobalStyle;

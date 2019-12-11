@@ -7,7 +7,7 @@ import { Container } from 'components/Layout/Grid';
 
 import { GithubLink } from 'helper/constants/constants';
 import {
-  FONT_56,
+  FONT_54,
   FOREST_BROWN,
   FOREST_GREEN_DARK,
   FOREST_GREEN_LIGHT,
@@ -20,7 +20,7 @@ const IndexContainer = styled(Container)`
 
   > h2 {
     font-weight: 400;
-    font-size: ${FONT_56};
+    font-size: ${FONT_54};
     margin-top: 1.8rem;
   }
 `;
@@ -38,7 +38,7 @@ const IndexLink = styled.a`
 
   > h1 {
     font-weight: 400;
-    font-size: ${FONT_56};
+    font-size: ${FONT_54};
     margin: 0;
   }
 `;
@@ -49,11 +49,11 @@ const BerlinStyle = styled.span`
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Martin Foakes" />
     <IndexContainer>
-      <IndexLink href={GithubLink}><h1>{'Martin Foakes.'}</h1></IndexLink>
+      <IndexLink href={GithubLink}><h1>{'Martin Foakes'}</h1></IndexLink>
       <h2>
-        {'I\'m a web developer, based in '}
+        {'I\'m a Web Developer, currently working and living in '}
         <BerlinStyle>{'Berlin.'}</BerlinStyle>
       </h2>
     </IndexContainer>
