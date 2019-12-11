@@ -9,12 +9,12 @@ import { GithubLink } from 'helper/constants/constants';
 import { navHeight, FONT_54 } from 'helper/constants/styles';
 
 import GithubIcon from 'images/GithubIcon';
-import { TEXT_LIGHT } from '../../helper/constants/styles';
+import { BACKGROUND_DARK, TEXT_LIGHT } from '../../helper/constants/styles';
 
 const NavContainer = styled.div`
   height: ${navHeight};
   margin-bottom: 2vh;
-  background-color: ${props => (!props.top ? '#14171c' : null)};
+  background-color: ${props => (!props.top ? `${BACKGROUND_DARK}` : null)};
   position: fixed;
   top: 0;
   left: 0;
