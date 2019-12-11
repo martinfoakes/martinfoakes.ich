@@ -20,7 +20,7 @@ const projectsData = [
   {
     to: '/projects#beyer',
     img: Beyer,
-    title: 'Beyerdynamic Audio Test',
+    title: 'Beyerdynamic Hearing Test',
     text: 'V1 web implementation of the hearing test for Beyerdynamic\'s MIY headphone app',
   },
 ];

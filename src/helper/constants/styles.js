@@ -3,7 +3,7 @@
 /**
  * LAYOUT VALUES
  */
-export const navHeight = '8rem';
+export const navHeight = '6rem';
 
 /**
  * COLOUR VALUES

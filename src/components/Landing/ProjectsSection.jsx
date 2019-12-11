@@ -6,11 +6,13 @@ import ProjectCards from 'components/Landing/ProjectsCards';
 
 const SectionContainer = styled(Container)`
   height: 28rem;
+  flex-direction: column;
 `;
 
 const ProjectsSection = () => (
   <>
     <SectionContainer>
+      <h2>{'My Projects >'}</h2>
       <Container>
         <ProjectCards />
       </Container>
