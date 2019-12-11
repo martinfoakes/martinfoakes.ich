@@ -7,6 +7,7 @@ import {
   navLinkHover,
   FONT_54,
   FONT_20,
+  TEXT_LIGHT,
 } from 'helper/constants/styles';
 
 import GithubIcon from 'images/GithubIcon';
@@ -14,7 +15,7 @@ import LinkedinIcon from 'images/LinkedinIcon';
 
 const MenuClick = styled.div`
   display: block;
-  color: #fafae5;
+  color: ${TEXT_LIGHT};
   position: relative;
   top: 0;
   left: 0;
@@ -66,11 +67,11 @@ const MenuClick = styled.div`
   > input:checked ~ span {
     opacity: 0.9;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #fafae5;
+    background: ${TEXT_LIGHT};
   }
 
   > input:checked ~ span[id="2"] {
-    transform: rotate(-45deg) translate(-5px, 0px);
+    transform: rotate(-45deg) translate(-5px, 0);
   }
 
   > input:checked ~ span[id="3"] {
@@ -90,7 +91,6 @@ const MenuList = styled.div`
   top: 0;
   bottom: 0;
   right: 0;
-  width: max-content;
   height: 100vh;
   width: 100vw;
   margin: 0;
@@ -118,7 +118,7 @@ const MenuLinks = styled.div`
 const StyledLink = styled(Link)`
   font-size: ${FONT_54};
   text-decoration: none;
-  color: #fafae5;
+  color: ${TEXT_LIGHT};
 
   > li {
     margin-bottom: 1.6rem;
@@ -127,7 +127,7 @@ const StyledLink = styled(Link)`
       transition: all .4s ease;
       color: ${navLinkHover};
       transform: translateX(-0.6rem);
-      background: linear-gradient(#fafae5,#fafae5) 0 100%/100% 1px no-repeat;
+      background: linear-gradient(${TEXT_LIGHT},${TEXT_LIGHT}) 0 100%/100% 1px no-repeat;
     }
   }
 `;
@@ -145,7 +145,7 @@ const LinksSection = styled.div`
   }
 
   a {
-    color: #fafae5;
+    color: ${TEXT_LIGHT};
   }
 `;
 
@@ -167,9 +167,10 @@ const Hamburger = () => (
       <MenuList id="menu">
         <MenuLinks>
           <ul>
-            <StyledLink to="/"><li>{'Home'}</li></StyledLink>
-            <StyledLink to="/"><li>{'My Work'}</li></StyledLink>
-            <StyledLink to="/"><li>{'Contact Me'}</li></StyledLink>
+            <StyledLink to="/"><li>{'About'}</li></StyledLink>
+            <StyledLink to="/"><li>{'My projects'}</li></StyledLink>
+            <StyledLink to="/"><li>{'Contact me'}</li></StyledLink>
+            <StyledLink to="/"><li>{'My experience'}</li></StyledLink>
           </ul>
         </MenuLinks>
         <LinksSection>
@@ -178,10 +179,10 @@ const Hamburger = () => (
             <a href={LinkedinLink}><LinkedinIcon /></a>
           </ul>
         </LinksSection>
+        <Copyright>
+          {`Copyright(c) ${new Date().getFullYear()} Martin Foakes. All rights reserved`}
+        </Copyright>
       </MenuList>
-      <Copyright>
-        {`Copyright(c) ${new Date().getFullYear()} Martin Foakes. All rights reserved`}
-      </Copyright>
     </MenuClick>
   </>
 );

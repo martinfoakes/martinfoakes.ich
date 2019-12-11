@@ -12,6 +12,9 @@ export const navLinkHover = '#ababab';
 export const FOREST_GREEN_DARK = '#1B5E20';
 export const FOREST_GREEN_LIGHT = '#3b923e';
 export const FOREST_BROWN = '#814123';
+export const BACKGROUND_DARK = '#142534;';
+export const TEXT_LIGHT = '#fafae5';
+export const WHITE = '#ffffff';
 
 /**
  * TYPOGRAPHY SIZES
