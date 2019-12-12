@@ -3,8 +3,10 @@ import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import { navHeight } from 'helper/constants/styles';
-import Nav from '../Nav/Nav';
+import Nav from '../Navigation/Nav';
 import GlobalStyle from './GlobalStyle';
+import Breakpoint from './Breakpoint';
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -19,6 +21,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Breakpoint />
       <GlobalStyle />
       <Nav siteTitle={data.site.siteMetadata.title} />
       <div>

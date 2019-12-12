@@ -1,104 +1,21 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
-import styled from 'styled-components';
 
-import { Container } from 'components/Layout/Grid';
-// import Hamburger from 'components/Nav/Hamburger';
-
-
-import { GithubLink, LinkedinLink, transitions } from 'helper/constants/constants';
-import { navHeight, FONT_54 } from 'helper/constants/styles';
+// import Hamburger from 'components/Navigation/Hamburger';
+import { GithubLink, LinkedinLink } from 'helper/constants/constants';
 
 import GithubIcon from 'images/GithubIcon';
 import LinkedinIcon from 'images/LinkedinIcon';
 
 import {
-  PARAGRAPH_BLACK,
-  BACKGROUND_LIGHT,
-  FOREST_GREEN_DARK,
-} from '../../helper/constants/styles';
-
-const NavContainer = styled.div`
-  height: ${navHeight};
-  margin-bottom: 2vh;
-  background-color: ${props => (!props.top ? `${PARAGRAPH_BLACK}` : null)};
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  transition: all .4s ease;
-  box-shadow: ${props => (!props.top ? '0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)' : null)};
-  z-index: 100;
-`;
-
-const NavMenu = styled(Container)`
-  display: flex;  align-items: center;
-  height: 100%;
-  justify-content: space-between;
-`;
-
-const NavHome = styled(Link)`
-  text-decoration: none;
-  cursor: pointer;
-
-  > h1 {
-    color: ${props => (!props.top ? `${BACKGROUND_LIGHT}` : `${FOREST_GREEN_DARK}`)};
-    font-size: ${FONT_54};
-    font-weight: 700;
-    margin: 0;
-  }
-`;
-
-const NavRight = styled.div`
-  display: flex;
-  align-items: center;
-
-  > ul {
-    display: flex;
-    align-items: center;
-  }
-`;
-
-const SocialIcon = styled.a`
-  width: 2.8rem;
-  margin-left: 1.8rem;
-  transition: all .3s ease;
-  color: ${props => (!props.top ? `${BACKGROUND_LIGHT}` : `${FOREST_GREEN_DARK}`)};
-  text-align: center;
-  padding-top: 8px;
-
-  &:hover {
-    opacity: 0.4;
-  }
-`;
-
-const StyledLi = styled.li`
-  margin-left: 2.4rem;
-  align-items: center;
-  transition: all .3s ease;
-  color: ${props => (!props.top ? `${BACKGROUND_LIGHT}` : `${FOREST_GREEN_DARK}`)};
-  font-weight: 700;
-
-  &:hover {
-    opacity: 0.4;
-  }
-
-  > a {
-    color: inherit;
-  }
-`;
-
-const StyledUnder = styled.span`
-  position: absolute;
-  background-color: #475d5b;
-  top: 4.2rem;
-  right: 0;
-  height: 0.1rem;
-  ${transitions.eightBallSnap};
-  width: ${props => props.position.width}px;
-  /* Pass in active to reset position if mouse has left list area.*/
-  transform: translateX(${props => (props.active > 0 ? props.position.left : 100)}px);
-`;
+  NavContainer,
+  NavMenu,
+  NavHome,
+  NavRight,
+  SocialIcon,
+  StyledLi,
+  StyledUnder,
+} from './NavStyleComps';
 
 const SocialLinks = [
   {
