@@ -20,10 +20,12 @@ import {
 const SocialLinks = [
   {
     href: GithubLink,
+    id: 'github',
     image: <GithubIcon />,
   },
   {
     href: LinkedinLink,
+    id: 'linkedin',
     image: <LinkedinIcon />,
   },
 ];
@@ -31,34 +33,38 @@ const SocialLinks = [
 const SiteLinks = [
   {
     to: '/',
+    id: 'projects',
     text: 'Projects',
   },
   {
     to: '/',
+    id: 'about',
     text: 'About',
   },
   {
     to: '/',
+    id: 'experience',
     text: 'Experience',
   },
   {
     to: '/',
+    id: 'contact',
     text: 'Contact',
   },
 ];
 
 class Nav extends Component {
   state = {
-    theTop: true,
+    top: true,
     position: { width: 0, left: 0 },
     active: 0,
   };
 
   componentDidMount() {
     document.addEventListener('scroll', () => {
-      const theTop = window.scrollY < 100;
-      if (theTop !== this.state.theTop) {
-        this.setState({ theTop });
+      const top = window.scrollY < 100;
+      if (top !== this.state.top) {
+        this.setState({ top });
       }
     });
   }
@@ -85,11 +91,11 @@ class Nav extends Component {
   };
 
   render() {
-    const { theTop, position, active } = this.state;
+    const { top, position, active } = this.state;
     return (
-      <NavContainer top={theTop}>
+      <NavContainer top={top}>
         <NavMenu as="nav">
-          <NavHome top={theTop} to="/">
+          <NavHome top={top} to="/">
             <h1>{'{MF}'}</h1>
           </NavHome>
           <NavRight
@@ -102,8 +108,9 @@ class Nav extends Component {
               {
                 SocialLinks.map(social => (
                   <SocialIcon
+                    key={social.id}
                     onMouseOver={this.mouseOver}
-                    top={theTop}
+                    top={top}
                     href={social.href}
                   >
                     {social.image}
@@ -113,8 +120,9 @@ class Nav extends Component {
               {
                 SiteLinks.map(link => (
                   <StyledLi
+                    key={link.id}
                     onMouseOver={this.mouseOver}
-                    top={theTop}
+                    top={top}
                   >
                     <Link to={link.to}>{link.text}</Link>
                   </StyledLi>

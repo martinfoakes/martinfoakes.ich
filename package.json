@@ -6,6 +6,7 @@
   "author": "Martin Foakes <foakes.m@gmail.com>",
   "dependencies": {
     "@rebass/grid": "^6.0.0",
+    "dotenv": "^8.2.0",
     "gatsby": "^2.18.4",
     "gatsby-image": "^2.2.34",
     "gatsby-plugin-manifest": "^2.2.30",
@@ -38,9 +39,6 @@
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.8.0"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
