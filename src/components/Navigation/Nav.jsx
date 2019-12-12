@@ -55,14 +55,14 @@ const SiteLinks = [
 
 class Nav extends Component {
   state = {
-    top: true,
+    top: 1,
     position: { width: 0, left: 0 },
     active: 0,
   };
 
   componentDidMount() {
     document.addEventListener('scroll', () => {
-      const top = window.scrollY < 100;
+      const top = window.scrollY < 100 ? 1 : 0;
       if (top !== this.state.top) {
         this.setState({ top });
       }
