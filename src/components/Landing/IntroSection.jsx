@@ -45,14 +45,13 @@ const IndexLink = styled.a`
 const BerlinStyle = styled.span`
   font-weight: 700;
   animation: colorchange 10s infinite;
-  @keyframes colorchange
-    {
-      0%   {color: #111d5e;}
-      25%  {color: #b21f66;}
-      50%  {color: #DD0000;}
-      75%  {color: #FFCE00;}
-      100% {color: #111d5e;}
-    }
+  @keyframes colorchange {
+    0%   {color: #111d5e;}
+    25%  {color: #b21f66;}
+    50%  {color: #DD0000;}
+    75%  {color: #FFCE00;}
+    100% {color: #111d5e;}
+  }
 `;
 const IntroSection = () => (
   <SectionContainer>
