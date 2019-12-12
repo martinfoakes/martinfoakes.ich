@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 import Img from 'gatsby-image';
 
 import { Container, Col } from 'components/Layout/Grid';
-import { desktop, smallTablet, largeTablet } from 'helper/constants/mediaBreaks';
+import { largeTablet } from 'helper/constants/mediaBreaks';
 import {
   FONT_18,
   FONT_54,
@@ -19,7 +19,7 @@ const Background = styled.div`
   background-color: ${FOREST_GREEN_LIGHT};
   border-top: 1px solid ${FOREST_GREEN_DARK};
   border-bottom: 1px solid ${FOREST_GREEN_DARK};
-  box-shadow: -1px 8px 6px rgba(0,0,0,0.19), 0px -6px 6px 1px rgba(0,0,0,0.23);
+  box-shadow: -1px 8px 6px rgba(0,0,0,0.19), 0 -6px 6px 1px rgba(0,0,0,0.23);
 `;
 
 const SectionContainer = styled(Container)`
@@ -95,7 +95,6 @@ const AboutSection = () => {
             <p>
               {'My day to day role covers a wide range of development tasks, currently within the scope of building and maintaining Serverless Web Applications.'}
             </p>
-            {/* I originally trained as a graphic designer, studying at the Arts University Bournemouth. My time here gave me a great foundation in layout, hierarchy and visual design. It’s also where my keen eye for typography originated. After finishing my degree in 2014 I jumped head first into the digital industry learning all I could about the world of user centred design and research from a variety of intern, freelance and permanent positions. */}
           </AboutText>
         </Col>
       </SectionContainer>
