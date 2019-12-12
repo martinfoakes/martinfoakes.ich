@@ -1,5 +1,5 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { Link, useStaticQuery, graphql } from 'gatsby';
 import styled, { css } from 'styled-components';
 import Img from 'gatsby-image';
 
@@ -38,6 +38,7 @@ const ImageCol = styled(Col)`
 `;
 
 const AboutText = styled.div`
+  margin-bottom: 1rem;
   margin-top: 1rem;
 
   ${largeTablet(css`
@@ -61,7 +62,8 @@ const AboutText = styled.div`
     font-weight: 700;
 
     &:hover {
-      text-decoration: underline;
+      transition: all .3s ease;
+      background: ${`linear-gradient(${HIGHLIGHT},${HIGHLIGHT}) 0 100%/100% 1px no-repeat`};
     }
   }
 `;
@@ -95,6 +97,7 @@ const AboutSection = () => {
             <p>
               {'My day to day role covers a wide range of development tasks, currently within the scope of building and maintaining Serverless Web Applications.'}
             </p>
+            <Link to="/about">{'More on me >'}</Link>
           </AboutText>
         </Col>
       </SectionContainer>

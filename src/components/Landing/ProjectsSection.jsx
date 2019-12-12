@@ -5,7 +5,7 @@ import { Container } from 'components/Layout/Grid';
 import ProjectCards from 'components/Landing/ProjectsCards';
 
 const SectionContainer = styled(Container)`
-  height: 28rem;
+  height: 100%;
   flex-direction: column;
 `;
 

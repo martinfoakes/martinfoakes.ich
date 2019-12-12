@@ -6,6 +6,7 @@ import { navHeight } from 'helper/constants/styles';
 import Nav from '../Navigation/Nav';
 import GlobalStyle from './GlobalStyle';
 import Breakpoint from './Breakpoint';
+import FooterComp from './FooterComp';
 
 
 const Layout = ({ children }) => {
@@ -27,7 +28,7 @@ const Layout = ({ children }) => {
       <div>
         <main id="main" style={{ paddingTop: navHeight }}>{children}</main>
         <footer>
-          {' '}
+          <FooterComp />
         </footer>
       </div>
     </>

@@ -1,14 +1,17 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 import { Container } from 'components/Layout/Grid';
 
 import { GithubLink } from 'helper/constants/constants';
 import {
+  FONT_24,
   FONT_40,
   FONT_54,
   FOREST_GREEN_DARK,
   FOREST_GREEN_LIGHT,
+  HIGHLIGHT,
 } from 'helper/constants/styles';
 
 const SectionContainer = styled(Container)`
@@ -53,6 +56,28 @@ const BerlinStyle = styled.span`
     100% {color: #111d5e;}
   }
 `;
+
+const IntroLinks = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+
+  > a {
+    color: ${HIGHLIGHT};
+    font-weight: 700;
+    font-size: ${FONT_24};
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 2rem;
+
+    &:hover {
+      transition: all .3s ease;
+      transform: translateY(-8px);
+      background: ${`linear-gradient(${HIGHLIGHT},${HIGHLIGHT}) 0 100%/100% 1px no-repeat`};
+    }
+  }
+`;
+
 const IntroSection = () => (
   <SectionContainer>
     <IndexLink href={GithubLink}><h1>{'My name\'s Martin Foakes.'}</h1></IndexLink>
@@ -60,6 +85,10 @@ const IntroSection = () => (
       {'I\'m a Web Developer, currently working and living in '}
       <BerlinStyle>{'Berlin.'}</BerlinStyle>
     </h2>
+    <IntroLinks>
+      <Link to="/projects">{'See some of my projects'}</Link>
+      <Link to="/experience">{'View my experience'}</Link>
+    </IntroLinks>
   </SectionContainer>
 );
 
