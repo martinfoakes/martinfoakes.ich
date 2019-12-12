@@ -28,6 +28,7 @@ const NavContainer = styled.div`
   right: 0;
   transition: all .4s ease;
   box-shadow: ${props => (!props.top ? '0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)' : null)};
+  z-index: 100;
 `;
 
 const NavMenu = styled(Container)`

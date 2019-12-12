@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import { Col } from 'components/Layout/Grid';
 import {
   WHITE,
-  BACKGROUND_DARK,
 } from 'helper/constants/styles';
 
 import Beyer from 'images/beyer.png';
@@ -28,7 +27,6 @@ const projectsData = [
 const CardContainer = styled(Col)`
   margin: 2rem;
   width: 30%;
-  background-color: ${BACKGROUND_DARK};
   border-radius: 20px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);

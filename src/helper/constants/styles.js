@@ -3,17 +3,20 @@
 /**
  * LAYOUT VALUES
  */
+export const BREAKPOINTS = ['32em', '50em', '64em', '112em']; // [512px, 800px, 1024px, 1800px]
 export const navHeight = '6rem';
 
 /**
  * COLOUR VALUES
  */
 export const TITLE_LIGHT = '#fffffe';
+export const SUBTITLE_LIGHT = '#f2f7f5';
 export const FOREST_GREEN_LIGHT = '#00473e';
 export const FOREST_GREEN_DARK = '#00332c';
 export const WHITE = '#ffffff';
 export const BACKGROUND_LIGHT = '#f2f7f5';
 export const PARAGRAPH_BLACK = '#475d5b';
+export const HIGHLIGHT = '#faae2b';
 
 /**
  * TYPOGRAPHY SIZES
