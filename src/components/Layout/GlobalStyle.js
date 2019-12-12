@@ -1,7 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
 
-import { FONT_BASE, FONT_18 } from 'helper/constants/styles';
-import '../../helper/fonts.css';
+import {
+  BACKGROUND_LIGHT,
+  FONT_BASE,
+  FONT_18,
+  PARAGRAPH_BLACK,
+} from 'helper/constants/styles';
+import '../../helper/fonts/fonts.css';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -20,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
 
   html,
   body {
-    color: #0d0900;
+    color: ${PARAGRAPH_BLACK};
     margin: 0;
     padding: 0;
     display: flex;
@@ -29,18 +34,14 @@ const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     flex-grow: 1;
     font-weight: 400;
+    background-color: ${BACKGROUND_LIGHT};
   }
 
   html {
-    background-color: #fbf9f5;
     color: #000;
     font-size: ${FONT_BASE};
     box-sizing: border-box;
     word-break: break-word;
-  }
-  
-  body {
-    font-family: "IBM Plex Sans Condensed", sans-serif, BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue";
   }
 
   h1,
@@ -49,7 +50,6 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-family: "IBM Plex Serif", serif;
     line-height: 1.1;
     margin-top: 0;
     margin-bottom: 1.45rem;

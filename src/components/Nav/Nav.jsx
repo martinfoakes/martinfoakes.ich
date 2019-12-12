@@ -36,7 +36,7 @@ const NavHome = styled(Link)`
   > h1 {
     color: ${props => (!props.top ? `${TEXT_LIGHT}` : '#0D0900')};
     font-size: ${FONT_54};
-    font-weight: 400;
+    font-weight: 700;
     margin: 0;
   }
 `;

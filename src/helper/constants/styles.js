@@ -9,12 +9,16 @@ export const navHeight = '6rem';
  * COLOUR VALUES
  */
 export const navLinkHover = '#ababab';
-export const FOREST_GREEN_DARK = '#1B5E20';
-export const FOREST_GREEN_LIGHT = '#3b923e';
+
 export const FOREST_BROWN = '#814123';
 export const BACKGROUND_DARK = '#142534;';
 export const TEXT_LIGHT = '#fafae5';
+
+export const FOREST_GREEN_LIGHT = '#00473e';
+export const FOREST_GREEN_DARK = '#00332c';
 export const WHITE = '#ffffff';
+export const BACKGROUND_LIGHT = '#f2f7f5';
+export const PARAGRAPH_BLACK = '#00332c';
 
 /**
  * TYPOGRAPHY SIZES

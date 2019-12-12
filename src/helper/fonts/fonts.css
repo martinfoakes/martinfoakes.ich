@@ -1,0 +1,45 @@
+@font-face {
+  font-family: Cormorant;
+  font-display: auto;
+  src: url('./CormorantGaramond-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Cormorant;
+  font-display: auto;
+  src: url('./CormorantGaramond-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Proza;
+  font-display: auto;
+  src: url('./ProzaLibre-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Proza;
+  font-display: auto;
+  src: url('./ProzaLibre-Bold.ttf');
+  font-weight: 700;
+}
+
+body {
+  font-family: "Proza", sans-serif, BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cormorant", serif;
+}
+
+/* body,
+button {
+  font-family: "Galano",BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+} */
