@@ -3,7 +3,6 @@ import { createGlobalStyle } from 'styled-components';
 import {
   BACKGROUND_LIGHT,
   FONT_BASE,
-  FONT_18,
   PARAGRAPH_BLACK,
 } from 'helper/constants/styles';
 import '../../helper/fonts/fonts.css';
@@ -82,12 +81,17 @@ const GlobalStyle = createGlobalStyle`
 
   a {
     color: #0d0900;
-    font-size: ${FONT_18};
+    font-size: ${FONT_BASE};
     text-decoration: none;
   }
 
   svg {
     fill: currentColor;
+  }
+
+  ul {
+    padding-inline-start: 0;
+    list-style: none;
   }
 `;
 

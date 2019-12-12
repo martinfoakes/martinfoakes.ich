@@ -13,21 +13,21 @@
 }
 
 @font-face {
-  font-family: Proza;
+  font-family: Libre;
   font-display: auto;
-  src: url('./ProzaLibre-Regular.ttf');
+  src: url('./LibreFranklin-Regular.ttf');
   font-weight: 400;
 }
 
 @font-face {
   font-family: Proza;
   font-display: auto;
-  src: url('./ProzaLibre-Bold.ttf');
+  src: url('./LibreFranklin-Bold.ttf');
   font-weight: 700;
 }
 
 body {
-  font-family: "Proza", sans-serif, BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue";
+  font-family: "Libre", sans-serif, BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue";
 }
 
 h1,

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const GithubIcon = () => (
-  <svg aria-hidden="true" width="45" height="48" focusable="false" data-prefix="fab" data-icon="github-alt" className="svg-inline--fa fa-github-alt fa-w-15" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512">
+  <svg aria-hidden="true" width="28" height="31" focusable="false" data-prefix="fab" data-icon="github-alt" className="svg-inline--fa fa-github-alt fa-w-15" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512">
     <defs>
       <style>{'.github_icon_svg{fill: currentColor;}'}</style>
     </defs>

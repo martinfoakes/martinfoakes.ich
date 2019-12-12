@@ -1,7 +1,7 @@
 import React from 'react';
 
 const LinkedinIcon = () => (
-  <svg aria-hidden="true" width="45" height="48" focusable="false" data-prefix="fab" data-icon="linkedin" className="linkedin-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+  <svg aria-hidden="true" width="28" height="31" focusable="false" data-prefix="fab" data-icon="linkedin" className="linkedin-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
     <defs>
       <style>{'.linkedin_icon_svg{fill: currentColor;}'}</style>
     </defs>
