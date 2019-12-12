@@ -13,16 +13,15 @@ import GithubIcon from 'images/GithubIcon';
 import LinkedinIcon from 'images/LinkedinIcon';
 
 import {
-  BACKGROUND_DARK,
-  FOREST_GREEN_LIGHT,
-  TEXT_LIGHT,
   PARAGRAPH_BLACK,
+  BACKGROUND_LIGHT,
+  FOREST_GREEN_DARK,
 } from '../../helper/constants/styles';
 
 const NavContainer = styled.div`
   height: ${navHeight};
   margin-bottom: 2vh;
-  background-color: ${props => (!props.top ? `${BACKGROUND_DARK}` : null)};
+  background-color: ${props => (!props.top ? `${PARAGRAPH_BLACK}` : null)};
   position: fixed;
   top: 0;
   left: 0;
@@ -42,7 +41,7 @@ const NavHome = styled(Link)`
   cursor: pointer;
 
   > h1 {
-    color: ${props => (!props.top ? `${TEXT_LIGHT}` : `${PARAGRAPH_BLACK}`)};
+    color: ${props => (!props.top ? `${BACKGROUND_LIGHT}` : `${FOREST_GREEN_DARK}`)};
     font-size: ${FONT_54};
     font-weight: 700;
     margin: 0;
@@ -63,7 +62,7 @@ const SocialIcon = styled.a`
   width: 2.8rem;
   margin-left: 1.8rem;
   transition: all .3s ease;
-  color: ${props => (!props.top ? `${TEXT_LIGHT}` : `${PARAGRAPH_BLACK}`)};
+  color: ${props => (!props.top ? `${BACKGROUND_LIGHT}` : `${FOREST_GREEN_DARK}`)};
   text-align: center;
   padding-top: 8px;
 
@@ -76,7 +75,7 @@ const StyledLi = styled.li`
   margin-left: 2.4rem;
   align-items: center;
   transition: all .3s ease;
-  color: ${props => (!props.top ? `${TEXT_LIGHT}` : `${PARAGRAPH_BLACK}`)};
+  color: ${props => (!props.top ? `${BACKGROUND_LIGHT}` : `${FOREST_GREEN_DARK}`)};
   font-weight: 700;
 
   &:hover {
@@ -90,11 +89,11 @@ const StyledLi = styled.li`
 
 const StyledUnder = styled.span`
   position: absolute;
-  background-color: ${FOREST_GREEN_LIGHT};
+  background-color: #475d5b;
   top: 4.2rem;
   right: 0;
   height: 0.1rem;
-  ${transitions.satanSnap};
+  ${transitions.eightBallSnap};
   width: ${props => props.position.width}px;
   /* Pass in active to reset position if mouse has left list area.*/
   transform: translateX(${props => (props.active > 0 ? props.position.left : 100)}px);

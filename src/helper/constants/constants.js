@@ -6,18 +6,18 @@ export const GithubLink = 'https://github.com/martinfoakes';
 export const LinkedinLink = 'https://www.linkedin.com/in/martinfoakes';
 
 export const transitions = {
-  quickSnap: `
+  twoTwosSnap: `
     transition: all 0.222s;
     transition-timing-function: cubic-bezier(0.060, 0.975, 0.195, 0.985);
   `,
 
-  mediumSnap: `
+  allTheFoursSnap: `
     transition: all 0.444s;
     transition-timing-function: cubic-bezier(0.060, 0.975, 0.195, 0.985);
   `,
 
-  satanSnap: `
-  transition: all 0.666s;
+  eightBallSnap: `
+  transition: all 0.888s;
   transition-timing-function: cubic-bezier(0.060, 0.975, 0.195, 0.985);
 `,
 };
